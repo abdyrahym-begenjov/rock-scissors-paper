@@ -1,10 +1,25 @@
 from random import choice
+from time import sleep
 
+print('Rock, Scissors, Paper')
+print('Creator: Abdyrahym Begenjov     (GitHub: abdyrahym-begenjov)')
+start=input('Enter to start: ')
+print('Loading...')
+sleep(2)
 words=['Rock', 'Scissors', 'Paper']
 up=0
 cp=0
+while True:
+    num=(input('Enter the number of rounds for game (Number must be no even): '))
+    try:
+        num=int(num)
+        if num%2!=0:
+            break
+        else:
+            print('Error!!!')
+    except ValueError:
+        print('Error!!!')
 
-num=int(input('Enter the number of rounds for game: '))
 while True:
     user=input(f'{'Enter the word: '}')
     user=user.title().strip()
@@ -19,8 +34,8 @@ while True:
         case _:
             print('Error!!!')
             continue
-    print(f'{'Computer'}: {computer}')
-    print(f'{'User'}: {up}      {'Computer'}: {cp}')
+    print(f'Computer: {computer}')
+    print(f'User: {up:<10} Computer: {cp}')
     if cp==num:
         print('Computer wins')
         print('Game Over!!!')
@@ -28,3 +43,5 @@ while True:
     elif up==num:
         print('You win!!!')
         break
+
+end=input('Enter to exit: ')
