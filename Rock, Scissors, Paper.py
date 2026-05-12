@@ -1,29 +1,42 @@
 from random import choice
 from time import sleep
+from translator import *
 
-print('Rock, Scissors, Paper')
-print('Creator: Abdyrahym Begenjov     (GitHub: abdyrahym-begenjov)')
-start=input('Enter to start: ')
-print('Loading...')
+print('en |  ru')
+while True:
+    lan=input()
+    if lan=='en' or lan=='ru':
+        break
+
+print(translator('Rock, Scissors, Paper', lan))
+print(f'{translator('Creator: Abdyrahym Begenjov', lan)}     (GitHub: abdyrahym-begenjov)')
+start=input(translator('Enter to start game: ', lan))
+print(translator('Loading...', lan))
 sleep(2)
-words=['Rock', 'Scissors', 'Paper']
+
+words=[translator('Rock', lan), translator('Scissors', lan), translator('Paper', lan)]
 up=0
 cp=0
+
 while True:
-    num=(input('Enter the number of rounds for game (Number must be no even): '))
+    num=input(translator('Enter the number of rounds for game (Number must be no even): ', lan))
     try:
         num=int(num)
         if num%2!=0:
             break
         else:
-            print('Error!!!')
+            print(translator('Error!!!', lan))
     except ValueError:
-        print('Error!!!')
+        print(translator('Error!!!', lan))
 
 while True:
-    user=input(f'{'Enter the word: '}')
+    user=input(f'{translator('Enter the word: ', lan)}')
     user=user.title().strip()
+    if lan=='ru':
+        user=translator(user, 'en1')
     computer=choice(words)
+    if lan=='ru':
+        computer=translator(computer, 'en1')
     match user, computer:
         case ('Rock', 'Paper') | ('Paper', 'Scissors') | ('Scissors', 'Rock'):
             cp+=1
@@ -32,16 +45,16 @@ while True:
         case ('Rock', 'Rock') | ('Paper', 'Paper') | ('Scissors', 'Scissors'):
             pass
         case _:
-            print('Error!!!')
+            print(translator('Error!!!', lan))
             continue
-    print(f'Computer: {computer}')
-    print(f'User: {up:<10} Computer: {cp}')
+    print(f'{translator('Computer', lan)}: {translator(computer, lan)}')
+    print(f'{translator('User', lan)}: {up}      {translator('Computer', lan)}: {cp}')
     if cp==num:
-        print('Computer wins')
-        print('Game Over!!!')
+        print(translator('Computer wins', lan))
+        print(translator('Game Over!!!', lan))
         break
     elif up==num:
-        print('You win!!!')
+        print(translator('You win!!!', lan))
         break
 
-end=input('Enter to exit: ')
+end=input(translator('Enter to exit: ', lan))
