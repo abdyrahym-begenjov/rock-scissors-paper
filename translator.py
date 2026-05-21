@@ -15,7 +15,22 @@ rutranslate={
     'Creator: Abdyrahym Begenjov': 'Создатель: Абдырахым Бегенджов',
     'Enter to start game: ': 'Нажмите, чтобы начать игру: ',
     'Loading...': 'Загрузка...',
-    'Enter to exit: ': 'Введите для выхода: '
+    'Enter to exit: ': 'Введите для выхода: ',
+    'Enter your name: ': 'Введите свое имя: ',
+    'Enter to exit mode: ': 'Войдите в режим выхода: ',
+    'Game      Records      Settings      Exit': 'Игра      Рекорды      Настройки      Выход',
+    'Choose a game mode: ': 'Выберите режим игры: ',
+    'Do you want to change parameters (Enter \"Name\" or \"Language\"): ': 'Хотите ли вы изменить параметры (введите \"Имя\" или \"Язык\"): ',
+    'Do you want to exit: ': 'Вы хотите выйти: ',
+    'Goodbye!!!': 'До свидания!!',
+    'Name': 'Имя',
+    'Language': 'Язык',
+    'Return': 'Вернуться',
+    'Game': 'Игра',
+    'Rules': 'Правилы',
+    'Records': 'Рекорды',
+    'Settings': 'Настройки',
+    'Exit': 'Выход'
              }
 
 
