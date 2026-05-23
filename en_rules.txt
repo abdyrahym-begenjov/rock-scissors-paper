@@ -1,0 +1,43 @@
+============================================================
+         🪨  SCISSORS, PAPER, ROCK — GAME RULES  📯
+============================================================
+
+Welcome to the ultimate Rock, Paper, Scissors showdown! Below 
+are the rules and guidelines to help you navigate the game.
+
+🎮 HOW TO PLAY
+------------------------------------------------------------
+1. Start the game and select "Game" from the main menu.
+2. Choose the total number of winning points required to win 
+   the overall match.
+3. In each round, enter your choice: Rock, Scissors, or Paper.
+
+
+⚔️ THE COMBAT LAWS
+------------------------------------------------------------
+• 🪨 Rock smashes ✂️ Scissors (Rock wins)
+• ✂️ Scissors cuts 📄 Paper (Scissors wins)
+• 📄 Paper covers 🪨 Rock (Paper wins)
+• 🤝 Same choices result in a tie/draw (No points awarded)
+
+
+🏆 WINNING THE MATCH
+------------------------------------------------------------
+• The first player (You or the Computer) to reach the chosen 
+  number of winning rounds wins the entire game!
+
+
+📊 GAME MODES & MENUS
+------------------------------------------------------------
+• Game: Start a new match against the computer.
+• Rules: The mode provides players with a quick guide to the game's mechanics, winning conditions, and menu navigation.
+• Highscores: Check your lifetime wins versus the computer's wins 
+  sorted by round types.
+• Settings: Change your username or switch your language at 
+  any time.
+• Exit: Safely close the game application.
+
+
+============================================================
+        GOOD LUCK! MAY THE ODDS BE IN YOUR FAVOR! 🍀
+============================================================

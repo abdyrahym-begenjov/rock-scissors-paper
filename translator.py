@@ -1,6 +1,6 @@
 rutranslate={
     'Rock, Scissors, Paper': 'Камень, ножницы, бумага',
-    'Enter the number of rounds for game (Number must be no even): ': 'Введите количество раундов игры (число не должно быть четным): ',
+    'How many wins are we playing to?: ': 'До скольких побед играем?: ',
     'Rock': 'Камень',
     'Scissors': 'Ножницы',
     'Paper': 'Бумага',
@@ -18,19 +18,23 @@ rutranslate={
     'Enter to exit: ': 'Введите для выхода: ',
     'Enter your name: ': 'Введите свое имя: ',
     'Enter to exit mode: ': 'Войдите в режим выхода: ',
-    'Game      Records      Settings      Exit': 'Игра      Рекорды      Настройки      Выход',
+    'Game      Rules      Highscores      Settings      Exit': 'Игра      Правила      Рекорды      Настройки      Выход',
     'Choose a game mode: ': 'Выберите режим игры: ',
     'Do you want to change parameters (Enter \"Name\" or \"Language\"): ': 'Хотите ли вы изменить параметры (введите \"Имя\" или \"Язык\"): ',
-    'Do you want to exit: ': 'Вы хотите выйти: ',
+    'Do you want to exit (\"Yes\" or \"No\"): ': 'Вы хотите завершить (\"Да\" или \"Нет\"): ',
     'Goodbye!!!': 'До свидания!!',
     'Name': 'Имя',
     'Language': 'Язык',
     'Return': 'Вернуться',
     'Game': 'Игра',
-    'Rules': 'Правилы',
-    'Records': 'Рекорды',
+    'Rules': 'Правила',
+    'No': 'Нет',
+    'Highscores': 'Рекорды',
     'Settings': 'Настройки',
-    'Exit': 'Выход'
+    'Exit': 'Выход', 
+    'NUMBER OF WINS POINTS |': 'КОЛИЧЕСТВО ВЫИГРАННЫХ ОЧКОВ |',
+    'HUMAN |': 'ЧЕЛОВЕК |',
+    'COMPUTER |': 'КОМПЬЮТЕР |'
              }
 
 
