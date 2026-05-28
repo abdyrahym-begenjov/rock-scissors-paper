@@ -1,39 +1,28 @@
 # rock-scissors-paper
-# Rock, Paper, Scissors Game
+# Rock, Scissors, Paper (Камень, Ножницы, Бумага)
 ## English
-
-### Description
-A console implementation of the classic game "Rock, Paper, Scissors" in Python.
-
-The program allows you to play against the computer until a certain number of wins are achieved. The winner determination logic is based on the `match-case` operator, ensuring clean and readable code.
-
-### Features
-* **Win Limit Selection:** The user sets the number of points required to complete the game.
-* **Smart Input:** The program automatically handles text case (e.g., `rock` is converted to `Rock`) and removes extra spaces.
-* **Feedback:** After each round, the computer's choice and the current score are displayed.
-
-### How to Run
-1. Make sure you have Python 3.10 or higher installed.
-2. Download the `Rock, Scissors, Paper.py` file.
-3. Run it from the terminal:
-python "Rock, Scissors, Paper.py"
-
-# Камень, ножницы, бумага 
+A console-based, classic Rock, Paper, Scissors game featuring multi-language support, score tracking, and custom win conditions.
+### Core Features
+ * **Bilingual Experience:** Fully supports both English and Russian languages, including custom user inputs and localized game text.
+ * **Personalized Profiles:** Saves your name and remembers your preferred language setting for future sessions.
+ * **Custom Match Length:** You decide the stakes. Choose how many wins it takes to claim ultimate victory before each match starts.
+ * **Stat Tracking:** Keeps a history of your performance. View your total wins versus the computer's wins across different match lengths in the Highscores menu.
+ * **Pure Random Mechanics:** No hidden AI or predictive algorithms here! The computer relies entirely on pure, unpredictable randomness for every single throw, keeping the game completely fair and classic.
+### How to Play
+ 1. **Setup:** On your first launch, the game will ask you to select your preferred language and enter your name.
+ 2. **Main Menu:** Navigate through the options by typing the mode name: Game, Rules, Highscores, Settings, or Exit.
+ 3. **The Battle:** Inside the game mode, choose how many wins you are playing to. When prompted, type Rock, Scissors, or Paper (or their Russian equivalents if playing in Russian).
+ 4. **Winning:** The game will keep score and declare a winner once either you or the computer reaches the target number of victories.
 ## Русский
-
-### Описание
-Консольная реализация классической игры "Камень, ножницы, бумага" на языке Python.
-
-Программа позволяет играть против компьютера до определенного количества побед. Логика определения победителя построена на использовании оператора `match-case`, что обеспечивает чистоту и читаемость кода.
-
-### Функционал
-* **Выбор лимита побед:** Пользователь сам устанавливает количество очков, необходимых для завершения игры.
-* **Умный ввод:** Программа автоматически обрабатывает регистр текста (например, `rock` преобразуется в `Rock`) и удаляет лишние пробелы.
-* **Обратная связь:** После каждого раунда отображается выбор компьютера и текущий счет.
-
-### Как запустить
-1. Убедитесь, что у вас установлен Python версии 3.10 или выше.
-2. Скачайте файл `Rock, Scissors, Paper.py`.
-3. Запустите его через терминал:
-python "Rock, Scissors, Paper.py"
-   
+Классическая консольная игра «Камень, Ножницы, Бумага» с поддержкой двух языков, отслеживанием статистики и возможностью настройки условий победы.
+### Основные возможности
+ * **Двуязычный интерфейс:** Полная поддержка английского и русского языков, включая ввод команд и игровой текст.
+ * **Персонализация:** Игра запоминает ваше имя и выбранный язык для последующих запусков.
+ * **Настройка длительности матча:** Вы сами устанавливаете правила. Перед началом каждой игры выбирайте, до какого количества побед будет идти матч.
+ * **Таблица рекордов:** Система сохраняет историю ваших игр. В меню статистики можно посмотреть количество ваших побед и побед компьютера для каждого числового режима.
+ * **Честный рандом:** Никакого искусственного интеллекта или скрытых алгоритмов предсказания. Выбор компьютера — это чистая, непредсказуемая случайность, что делает игру абсолютно честной и классической.
+### Игровой процесс
+ 1. **Первый запуск:** При первом старте игра предложит выбрать язык интерфейса и ввести ваше имя.
+ 2. **Главное меню:** Для перемещения по меню введите название нужного режима: Game (Игра), Rules (Правила), Highscores (Рекорды), Settings (Настройки) или Exit (Выход).
+ 3. **Битва:** В режиме игры укажите целевое количество побед. Когда игра попросит, введите ваш ход: Камень, Ножницы или Бумага (или английские аналоги, если выбран английский язык).
+ 4. **Финал:** Игра автоматически подсчитывает очки и объявит победителя, как только вы или компьютер наберете нужное количество побед.
