@@ -34,7 +34,9 @@ rutranslate={
     'Exit': 'Выход', 
     'NUMBER OF WINS POINTS |': 'КОЛИЧЕСТВО ВЫИГРАННЫХ ОЧКОВ |',
     'HUMAN |': 'ЧЕЛОВЕК |',
-    'COMPUTER |': 'КОМПЬЮТЕР |'
+    'COMPUTER |': 'КОМПЬЮТЕР |',
+    'You\'ve never played before. After your first game, you\'ll have a high score table.': 'Вы никогда раньше не играли в эту игру. После первой игры у вас появится таблица рекордов.',
+    'The number must not be less than or equal to zero!!!': 'Число не должно быть меньше или равной нулю!!!'
              }
 
 
