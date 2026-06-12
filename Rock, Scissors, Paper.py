@@ -24,6 +24,8 @@ while True:
     print(translator('Game      Rules      Highscores      Settings      Exit', lang))
     mode=input(translator('Choose a game mode: ', lang))
     mode=new_word(mode, lang)
+    if name not in base:
+        base[name]=[0, 0]
     clear_screen()
     match mode:
         case 'Game':
@@ -39,11 +41,6 @@ while True:
                         break
                 except ValueError:
                     print(translator('Error!!!', lang))
-
-            if name not in base:
-                base[name]={}
-            if str(num) not in base[name]:
-                base[name][str(num)]=[num, 0, 0]
 
             print(translator('Loading...', lang))
             sleep(2)
@@ -73,11 +70,11 @@ while True:
                 if cp==num:
                     print(translator('Computer wins', lang))
                     print(translator('Game Over!!!', lang))
-                    base[name][str(num)][2]+=1
+                    base[name][1]+=num
                     break
                 elif up==num:
                     print(translator('You win!!!', lang))
-                    base[name][str(num)][1]+=1
+                    base[name][0]+=num
                     break
             pywrite('base.json', base)
 
@@ -94,8 +91,7 @@ while True:
             clear_screen()
 
         case 'Highscores':
-            draw_leaderboard(base, name, lang)
-
+            draw_leaderboard(base, lang)
             end=input(translator('Enter to exit mode: ', lang))
             clear_screen()
 

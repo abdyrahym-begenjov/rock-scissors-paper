@@ -37,38 +37,31 @@ def enter_name(lang, data):
             pywrite('data.json', data)
             return name
         
-def draw_leaderboard(base, name, lang):
-    try:
-        a, b, c=[], [], []
-        user=base[name]
-        user1=list(user.items())
-        user1.sort()
-        base[name]=dict(user1)
-        for i in base[name].values():
-            a.append(str(i[0]))
-            b.append(str(i[1]))
-            c.append(str(i[2]))
-        a=[f'{i:<8}|' for i in a]
-        b=[f'{i:<8}|' for i in b]
-        c=[f'{i:<8}|' for i in c]
-        a=' '.join(a)
-        b=' '.join(b)
-        c=' '.join(c)
+def draw_leaderboard(base, lang):
+    print(translator('LEADERBOARD:', lang))
+    base=list(base.items())
+    base.sort(key=lambda x: x[1][0]-x[1][1], reverse=True)
+    base=dict(base)
+
+    lst=['VICTORIES', 'DEFEATS', 'OVERALL RESULT']
+    lst=[f'{translator(i, lang):<16}|' for i in lst]
+    lst=' '.join(lst)
+    line1=f'|{translator('NAME |', lang):>18} {lst:<16}'
+    line='-'*len(line1)
+    print(line)
+    print(line1)
+    print(line)
+
+    for i, j in base.items():
+        name=i
+        a=str(j[0])
+        b=str(j[1])
+        c=j[0]-j[1]
         name1=f'{name} |'
-        line1=f'|{translator('NUMBER OF WINS POINTS |', lang):>30} {a:<6}'
-        line2=f'|{name1:>30} {b:<6}'
-        line3=f'|{translator('COMPUTER |', lang):>30} {c:<6}'
-        line='-'*len(line1)
-            
-        print(line)
-        print(line1)
-        print(line)
+    
+        line2=f'|{name1:>18} {a:<16}| {b:<16}| {c:<16}|'
         print(line2)
         print(line)
-        print(line3)
-        print(line)
-    except KeyError:
-        print(translator('You\'ve never played before. After your first game, you\'ll have a high score table.', lang))
 
 def new_word(word, lang):
     word=word.strip().title()
