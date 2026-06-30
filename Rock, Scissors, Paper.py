@@ -29,8 +29,6 @@ while True:
     clear_screen()
     match mode:
         case 'Game':
-            start=input(translator('Enter to start game: ', lang))
-
             while True:
                 num=input(translator('How many wins are we playing to?: ', lang))
                 try:
